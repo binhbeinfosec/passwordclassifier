@@ -1,0 +1,13 @@
+# Python cache & compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# MacOS system files
+.DS_Store

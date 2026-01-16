@@ -37,7 +37,7 @@ The tool consists of three main components:
 If you wish to train the model on your own dataset:
 
 ```bash
-python3 trainer.py -i PATH_TO_DATASET.txt -o my_model.pkl
+python3 trainer.py -i PATH_TO_TRAINING_DATASET -o MODEL_NAME.pkl
 ```
 
 #### Data Preparation Guidelines
@@ -59,14 +59,14 @@ You can use the provided pre-trained model (if available) or your own trained mo
 Run the classifier to enter passwords manually via the command line.
 
 ```bash
-python3 classifier.py -m my_model.pkl
+python3 classifier.py -m MODEL_NAME.pkl
 ```
 
 **File Mode:**
 To classify a large list of passwords (one password per line).
 
 ```bash
-python3 classifier.py -m my_model.pkl -i passwords_to_test.txt -o results.txt
+python3 classifier.py -m MODEL_NAME.pkl -i TEST_FILE -o RESULT_FILE
 ```
 
 ## Citation
